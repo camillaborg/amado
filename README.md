@@ -1,0 +1,2 @@
+# amado
+Amado Wordpress Theme
