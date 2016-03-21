@@ -20,7 +20,8 @@ a {
 
 #logo {
   text-indent: -999rem;
-  padding-top: 45px;
+  padding-top: 20px;
+  padding-bottom: 20px;
   background-size: cover;
   width: 300px;
   transition: opacity 1s;
@@ -73,8 +74,7 @@ h2 {
 .item img {
   width: 100%;
   display: block;
-  margin: 0 auto;
-  margin-bottom: 10px; }
+  margin: 0 auto; }
 
 .item p {
   font-family: Georgia, "Times New Roman", Times, serif;
@@ -82,6 +82,9 @@ h2 {
   font-size: 16px;
   text-align: center;
   padding: 10px 25px 25px 25px; }
+
+.row.container {
+  margin-top: 20px; }
 
 /* ----FLEXBOX Cases-------*/
 .six.columns {
@@ -102,8 +105,9 @@ h2 {
     align-items: flex-start; }
   .item h3 {
     padding: 0px 25px; }
-  .row.container {
-    margin-top: 20px; } }
+  .item p {
+    margin: 0px;
+    padding-bottom: 0px; } }
 
 /* ---END FLEXBOX---- */
 /* Video */
@@ -131,14 +135,14 @@ h2 {
   display: block;
   margin: 0 auto;
   width: 100%;
-  padding-top: 10px; }
+  padding-top: 20px; }
 
 /* MENU */
 #show-menu {
-  top: 12px;
-  right: 14px;
+  top: 15px;
+  right: 20px;
   position: absolute;
-  width: 28px;
+  width: 35px;
   cursor: pointer; }
 
 #desktop-menu {
@@ -212,7 +216,7 @@ footer {
   footer .footer-logo {
     width: 200px;
     height: 40px;
-    padding: 10px 0px 10px 5px; }
+    padding-top: 15px; }
   footer .item p {
     margin: 0px;
     padding: 10px; }
@@ -235,7 +239,7 @@ footer {
   footer {
     margin-top: 50px; }
     footer .footer-logo {
-      padding: 70px 0px 10px 5px; } }
+      padding: 80px 0px 10px 5px; } }
 
 @media (min-width: 650px) {
   .row .container {
@@ -245,7 +249,8 @@ footer {
 /* Larger than tablet */
 @media (min-width: 770px) {
   #logo {
-    width: 700px; }
+    width: 700px;
+    padding-top: 55px; }
   #show-menu {
     display: none; }
   #desktop-menu {
@@ -297,7 +302,8 @@ footer {
   .six.columns {
     width: 48%; }
   .item h3 {
-    font-size: 28px; } }
+    font-size: 28px;
+    padding-bottom: 20px; } }
 
 /* Larger than Desktop HD */
 @media (min-width: 1200px) {

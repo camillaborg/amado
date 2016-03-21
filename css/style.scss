@@ -63,7 +63,8 @@ a{
 }
 #logo {
   text-indent: -999rem;
-  padding-top: 45px;
+  padding-top: 20px;
+  padding-bottom: 20px;
   background-size: cover;
   width: 300px;
   transition: opacity 1s;
@@ -104,12 +105,14 @@ a{
     width: 100%;
     display: block;
     margin: 0 auto;
-    margin-bottom: 10px;
   }
   p{
     @include p-style;
     padding: 10px 25px 25px 25px;
   }
+}
+.row.container{
+  margin-top: 20px;
 }
 /* ----FLEXBOX Cases-------*/
 .six.columns{
@@ -134,9 +137,10 @@ a{
     h3{
       padding: 0px 25px;
     }
-  }
-  .row.container{
-    margin-top: 20px;
+    p{
+      margin: 0px;
+      padding-bottom: 0px;
+    }
   }
 
 
@@ -170,15 +174,15 @@ a{
   display: block;
   margin: 0 auto;
   width: 100%;
-  padding-top: 10px;
+  padding-top: 20px;
 }
 
 /* MENU */
 #show-menu{
-  top: 12px;
-  right: 14px;
+  top: 15px;
+  right: 20px;
   position: absolute;
-  width: 28px;
+  width: 35px;
   cursor: pointer;
 }
 #desktop-menu{
@@ -249,7 +253,7 @@ footer{
   .footer-logo{
     width: 200px;
     height: 40px;
-    padding: 10px 0px 10px 5px;
+    padding-top: 15px;
 
   }
   .item {
@@ -284,7 +288,7 @@ footer{
   footer {
     margin-top: 50px;
     .footer-logo {
-      padding: 70px 0px 10px 5px;
+      padding: 80px 0px 10px 5px;
     }
   }
 }
@@ -304,6 +308,7 @@ footer{
 
   #logo{
     width: 700px;
+    padding-top: 55px;
   }
   #show-menu{
     display: none;
@@ -373,6 +378,7 @@ footer{
   .item{
     h3{
       font-size: 28px;
+      padding-bottom: 20px;
     }
   }
 }

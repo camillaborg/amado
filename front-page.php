@@ -44,7 +44,7 @@ $content = get_the_content();
                         <?php endif; ?>
                             <?php if ($radio):?>
                                 <audio controls class="audio">
-                                    <source src="<?php echo $radio['url']; ?>" type="audio/ogg">
+                                    <source src="<?php echo $radio['url']; ?>" type="audio/wav">
                                 </audio>
                             <?php endif; ?>
                         </div>
