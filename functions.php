@@ -54,58 +54,12 @@ function our_widgets_init(){
         'before_title' => '<h4 class="widget-headline">',
         'after_title' => '</h4>'
     ]);
-    register_sidebar([
-        'name' => 'Address',
-        'id' => 'address'
-    ]);
-    register_sidebar([
-        'name' => 'Email and phone',
-        'id' => 'emailphone'
-    ]);
+
     register_sidebar([
         'name' => 'FooterMap',
         'id' => 'footermap'
     ]);
-    register_sidebar([
-        'name' => 'Social Media',
-        'id' => 'social',
-        'class' => 'social'
-    ]);
-    register_sidebar([
-        'name' => 'Contact 1',
-        'id' => 'contact1',
-        'class' => 'contact1'
-    ]);
-    register_sidebar([
-        'name' => 'Contact 2',
-        'id' => 'contact2',
-        'class' => 'contact2'
-    ]);
-    register_sidebar([
-        'name' => 'About Us - The company ',
-        'id' => 'aboutus',
-        'class' => 'aboutus'
-    ]);
-    register_sidebar([
-        'name' => 'About Us - Vision',
-        'id' => 'aboutusvision',
-        'class' => 'aboutusvision'
-    ]);
-    register_sidebar([
-        'name' => 'About Us - Picturedivider',
-        'id' => 'aboutuspicturedivider',
-        'class' => 'aboutuspicturedivider'
-    ]);
-    register_sidebar([
-        'name' => 'About Us - Team',
-        'id' => 'aboutusteam',
-        'class' => 'aboutusteam'
-    ]);
-    register_sidebar([
-        'name' => 'Work with Us',
-        'id' => 'workwithus',
-        'class' => 'workwithus'
-    ]);
+
 }
 
 add_action('widgets_init', 'our_widgets_init');
@@ -212,7 +166,7 @@ $title = __( 'New title', 'wpb_widget_domain' );
 }
 // Updating widget replacing old instances with new
 
-    public function update( $new_instance, $old_instance ) {
+  public function update( $new_instance, $old_instance ) {
 
 $instance = array();
 
@@ -358,6 +312,7 @@ add_action( 'customize_register', 'tcx_register_theme_customizer' );
 function wpb_list_child_pages() {
 
     global $post;
+    global $string;
 
     if ( is_page() && $post->post_parent )
 
@@ -387,6 +342,7 @@ function tcx_customizer_css() {
   <?php
 }
 add_action( 'wp_head', 'tcx_customizer_css' );
+
 
 
 
