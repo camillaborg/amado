@@ -1,8 +1,4 @@
 @font-face {
-  font-family: Open Sans;
-  src: url(../fonts/OpenSans-Light.ttf); }
-
-@font-face {
   font-family: Georgia;
   src: url(../fonts/Georgia.ttf); }
 
@@ -35,7 +31,6 @@ a {
   position: relative; }
 
 .about {
-  margin-top: 20px;
   border-bottom: 1px solid white;
   border-top: 1px solid white;
   padding: 25px; }
@@ -60,33 +55,38 @@ h2 {
   font-weight: bold;
   font-size: 40px;
   text-align: center;
-  display: block;
-  margin-top: 50px; }
+  display: block; }
 
-.item {
-  padding: 0px 25px 25px 25px; }
-  .item h3 {
-    font-family: Lovelo;
-    color: rgba(0, 0, 0, 0.52);
-    text-transform: uppercase;
-    font-weight: bold;
-    font-size: 23px;
-    text-align: center;
-    padding: 25px 25px 0px 25px;
-    margin-bottom: 0px; }
-  .item img {
-    width: 100%;
-    display: block;
-    margin: 0 auto;
-    margin-bottom: 10px; }
-  .item p {
-    font-family: Georgia, "Times New Roman", Times, serif;
-    color: #fdfdfd;
-    font-size: 16px;
-    text-align: center;
-    padding: 10px 25px 25px 25px; }
+.cases {
+  padding: 25px; }
+
+.item h3 {
+  font-family: Lovelo;
+  color: rgba(0, 0, 0, 0.52);
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 23px;
+  text-align: center;
+  padding: 25px 25px 0px 25px;
+  margin-bottom: 0px; }
+
+.item img {
+  width: 100%;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 10px; }
+
+.item p {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  color: #fdfdfd;
+  font-size: 16px;
+  text-align: center;
+  padding: 10px 25px 25px 25px; }
 
 /* ----FLEXBOX Cases-------*/
+.six.columns {
+  margin: 0px; }
+
 .video {
   margin-bottom: 10px; }
 
@@ -98,7 +98,12 @@ h2 {
 
 @media (min-width: 650px) {
   .container {
-    flex-direction: row; } }
+    flex-direction: row;
+    align-items: flex-start; }
+  .item h3 {
+    padding: 0px 25px; }
+  .row.container {
+    margin-top: 20px; } }
 
 /* ---END FLEXBOX---- */
 /* Video */
@@ -124,7 +129,9 @@ h2 {
 /* Radio */
 .audio {
   display: block;
-  margin: 0 auto; }
+  margin: 0 auto;
+  width: 100%;
+  padding-top: 10px; }
 
 /* MENU */
 #show-menu {
@@ -201,7 +208,7 @@ footer {
     font-size: 18px;
     text-align: center;
     margin-bottom: 0px;
-    padding-top: 10px; }
+    padding-top: 40px; }
   footer .footer-logo {
     width: 200px;
     height: 40px;
@@ -217,17 +224,26 @@ footer {
 /* Larger than mobile */
 @media (min-width: 400px) {
   #logo {
-    width: 400px; } }
+    width: 400px; }
+  .audio {
+    width: 100%; } }
 
 /* Larger than phablet (also point when grid becomes active) */
 @media (min-width: 550px) {
   .six.columns {
-    width: 100%; } }
+    width: 100%; }
+  footer {
+    margin-top: 50px; }
+    footer .footer-logo {
+      padding: 70px 0px 10px 5px; } }
+
+@media (min-width: 650px) {
+  .row .container {
+    align-items: flex-end;
+    align-content: center; } }
 
 /* Larger than tablet */
 @media (min-width: 770px) {
-  footer .footer-logo {
-    padding: 70px 0px 10px 5px; }
   #logo {
     width: 700px; }
   #show-menu {
@@ -279,7 +295,9 @@ footer {
 /* Larger than desktop */
 @media (min-width: 800px) {
   .six.columns {
-    width: 48%; } }
+    width: 48%; }
+  .item h3 {
+    font-size: 28px; } }
 
 /* Larger than Desktop HD */
 @media (min-width: 1200px) {

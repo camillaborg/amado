@@ -37,22 +37,22 @@ $content = get_the_content();
                         <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt'] ?>" />
                     <?php endif; ?>
                 </div>
-                <div class="row">
-                        <div class="six columns">
+                <div class="row container">
+                        <div class="six columns item">
                         <?php if( $video ): ?>
                         <div class="embed-container"><?php echo $video ?></div>
                         <?php endif; ?>
-                        </div>
-                        <div class="six columns">
-                            <?php if( $header ): ?>
-                                <h3><?php echo $header; ?></h3>
-                            <?php endif; ?>
-                        <?php echo $content; ?>
                             <?php if ($radio):?>
                                 <audio controls class="audio">
                                     <source src="<?php echo $radio['url']; ?>" type="audio/ogg">
                                 </audio>
                             <?php endif; ?>
+                        </div>
+                        <div class="six columns item">
+                            <?php if( $header ): ?>
+                                <h3><?php echo $header; ?></h3>
+                            <?php endif; ?>
+                        <?php echo $content; ?>
                         </div>
                     </div>
             </div>

@@ -1,8 +1,4 @@
 @font-face {
-  font-family: Open Sans;
-  src: url(../fonts/OpenSans-Light.ttf);
-}
-@font-face {
   font-family: Georgia;
   src: url(../fonts/Georgia.ttf);
 }
@@ -78,7 +74,6 @@ a{
   position: relative;
 }
 .about{
-  margin-top: 20px;
   border-bottom: 1px solid white;
   border-top: 1px solid white;
   padding: 25px;
@@ -95,11 +90,11 @@ a{
   h2{
     @include h2-style;
     display: block;
-    margin-top: 50px;
   }
-
+.cases{
+  padding: 25px;
+}
 .item{
-  padding: 0px 25px 25px 25px;
   h3{
     @include h3-style;
     padding: 25px 25px 0px 25px;
@@ -117,6 +112,9 @@ a{
   }
 }
 /* ----FLEXBOX Cases-------*/
+.six.columns{
+  margin: 0px;
+}
 .video{
   margin-bottom: 10px;
 }
@@ -130,7 +128,17 @@ a{
 @media (min-width: 650px) {
   .container{
     flex-direction: row;
+    align-items: flex-start;
   }
+  .item{
+    h3{
+      padding: 0px 25px;
+    }
+  }
+  .row.container{
+    margin-top: 20px;
+  }
+
 
 }
 /* ---END FLEXBOX---- */
@@ -161,6 +169,8 @@ a{
 .audio{
   display: block;
   margin: 0 auto;
+  width: 100%;
+  padding-top: 10px;
 }
 
 /* MENU */
@@ -234,7 +244,7 @@ footer{
   h4{
     @include h4-style;
     margin-bottom: 0px;
-    padding-top: 10px;
+    padding-top: 40px;
   }
   .footer-logo{
     width: 200px;
@@ -255,10 +265,15 @@ footer{
     }
   }
 }
+
+
 /* Larger than mobile */
 @media (min-width: 400px) {
   #logo{
     width: 400px;
+  }
+  .audio{
+    width: 100%;
   }
 }
 /* Larger than phablet (also point when grid becomes active) */
@@ -266,15 +281,26 @@ footer{
   .six.columns{
     width: 100%;
   }
-}
-
-/* Larger than tablet */
-@media (min-width: 770px) {
   footer {
+    margin-top: 50px;
     .footer-logo {
       padding: 70px 0px 10px 5px;
     }
   }
+}
+
+@media (min-width: 650px) {
+  .row{
+    .container{
+      align-items: flex-end;
+      align-content: center;
+    }
+  }
+
+}
+
+/* Larger than tablet */
+@media (min-width: 770px) {
 
   #logo{
     width: 700px;
@@ -343,6 +369,11 @@ footer{
 @media (min-width: 800px) {
   .six.columns{
     width: 48%;
+  }
+  .item{
+    h3{
+      font-size: 28px;
+    }
   }
 }
 
