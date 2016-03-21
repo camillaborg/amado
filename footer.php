@@ -46,11 +46,6 @@
             <p>&copy; <?php bloginfo('author');?> <?php the_time('Y');?></p>
         </div>
     </div>
-
-    <div class="row">
-        <div class="twelve columns">
-        </div>
-    </div>
 </footer>
      <?php wp_footer(); ?>
     </body>

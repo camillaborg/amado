@@ -48,7 +48,11 @@ $content = get_the_content();
                                 <h3><?php echo $header; ?></h3>
                             <?php endif; ?>
                         <?php echo $content; ?>
-                        <?php echo $radio; ?>
+                            <?php if ($radio):?>
+                                <audio controls class="audio">
+                                    <source src="<?php echo $radio['url']; ?>" type="audio/ogg">
+                                </audio>
+                            <?php endif; ?>
                         </div>
                     </div>
             </div>

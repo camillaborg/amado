@@ -8,6 +8,7 @@ jQuery(function($) { // DOM is now read and ready to be manipulated
     });
 
     $('p:empty').remove();
+    $('h4:empty').remove();
 
     // Smooth scroll funktion
     $(function() {
