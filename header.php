@@ -19,22 +19,12 @@
     <header class="header">
         <img id="show-menu" src="<?php bloginfo('template_directory'); ?>/images/menu_button.png">
 
-        <nav id="desktop-menu" class="main-nav">
-           <ul>
-               <a href="#about"><li>About</li></a>
-               <a href="#cases"><li>Cases</li></a>
-               <a href="#contact"><li>Contact</li></a>
-           </ul>
-        </nav>
-
         <nav id="menu" class="main-nav">
             <ul>
                 <a href="#about"><li>About</li></a>
                 <a href="#cases"><li>Cases</li></a>
                 <a href="#contact"><li>Contact</li></a>
             </ul>
-
-
         </nav>
 
 
@@ -52,4 +42,11 @@
                 </a>
 
             <?php endif; ?>
+        <nav id="desktop-menu" class="main-nav">
+            <ul>
+                <a href="#about"><li>About</li></a>
+                <a href="#cases"><li>Cases</li></a>
+                <a href="#contact"><li>Contact</li></a>
+            </ul>
+        </nav>
     </header>

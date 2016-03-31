@@ -31,6 +31,12 @@ $content = get_the_content();
             <?php if( $case ): ?>
                 <h2><?php echo $case; ?></h2>
             <?php endif; ?>
+            <div class="twelve columns item">
+                <?php if( $header ): ?>
+                    <h3><?php echo $header; ?></h3>
+                <?php endif; ?>
+                <?php echo $content; ?>
+            </div>
             <div class="item" id="cases">
                 <div class="image">
                     <?php if( $image ): ?>
@@ -47,12 +53,6 @@ $content = get_the_content();
                                     <source src="<?php echo $radio['url']; ?>" type="audio/wav">
                                 </audio>
                             <?php endif; ?>
-                        </div>
-                        <div class="six columns item">
-                            <?php if( $header ): ?>
-                                <h3><?php echo $header; ?></h3>
-                            <?php endif; ?>
-                        <?php echo $content; ?>
                         </div>
                     </div>
             </div>
