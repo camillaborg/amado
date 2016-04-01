@@ -207,6 +207,10 @@ h2 {
     padding-top: 28px;
     padding-bottom: 28px; } }
 
+@media (min-width: 1200px) {
+  .audio {
+    padding-top: 54px; } }
+
 /* MENU */
 #show-menu {
   top: 15px;
