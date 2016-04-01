@@ -35,15 +35,15 @@ $content = get_the_content();
                 <?php if( $header ): ?>
                     <h3><?php echo $header; ?></h3>
                 <?php endif; ?>
-                <?php echo $content; ?>
+                <p class="content"><?php echo $content; ?></p>
             </div>
             <div class="item" id="cases">
-                <div class="image">
-                    <?php if( $image ): ?>
-                        <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt'] ?>" />
-                    <?php endif; ?>
-                </div>
                 <div class="row container">
+                    <div class="six columns item image">
+                        <?php if( $image ): ?>
+                            <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt'] ?>" />
+                        <?php endif; ?>
+                    </div>
                         <div class="six columns item">
                         <?php if( $video ): ?>
                         <div class="embed-container"><?php echo $video ?></div>

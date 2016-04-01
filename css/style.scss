@@ -22,7 +22,7 @@ $h3-color: rgba(0, 0, 0, 0.52);
   font-family: Georgia, "Times New Roman", Times, serif;
   color: $text-color;
   font-size: 10px;
-  text-align: center;
+  //text-align: center;
 }
 @mixin h2-style{
   font-family: "Lovelo";
@@ -41,11 +41,12 @@ $h3-color: rgba(0, 0, 0, 0.52);
   text-align: center;
 }
 @mixin h4-style{
-  font-family: Lovelo;
+  font-family: Georgia;
   color: $h3-color;
-  text-transform: uppercase;
+  color: white;
+  //text-transform: uppercase;
   font-weight: bold;
-  font-size: 18px;
+  font-size: 25px;
   text-align: center;
 }
 body{
@@ -66,18 +67,24 @@ a{
   padding-top: 50px;
   padding-bottom: 20px;
   background-size: cover;
-  width: 300px;
+  width: 320px;
   transition: opacity 1s;
   -webkit-transition: opacity 1s;
   z-index: 2;
   display: block;
   margin: 0 auto;
   position: relative;
+  @media (min-width: 375px) {
+    #logo img{
+      width: 370px;
+    }
+  }
 }
 .about{
   border-bottom: 1px solid white;
   border-top: 1px solid white;
   padding: 25px;
+
   @media (min-width: 770px) {
     .about{
       padding: 25px 50px;
@@ -93,6 +100,7 @@ a{
 
   p{
     @include p-style;
+    font-size: 20px;
     margin-bottom: 0px;
   }
 }
@@ -113,10 +121,13 @@ a{
 .cases{
   padding: 25px;
 }
+.six.columns.item.image{
+  padding-bottom: 25px;
+}
 .item{
   h3{
     @include h3-style;
-    padding: 25px 25px 0px 25px;
+    padding: 5px 25px 10px 25px;
     margin-bottom: 0px;
   }
   img{
@@ -126,7 +137,13 @@ a{
   }
   p{
     @include p-style;
-    padding-top: 10px;
+    font-size: 20px;
+  }
+
+}
+.twelve.columns.item{
+  p{
+    padding-bottom: 25px;
   }
 }
 .row.container{
@@ -142,16 +159,31 @@ a{
 .container{
   display: flex;
   flex-direction: column;
-  .item{
-    flex-grow: 1;
-  }
+  max-width: 850px;
 }
 @media (min-width: 650px) {
   .container{
     flex-direction: row;
     align-items: flex-start;
+    flex-wrap: wrap;
+    .item{
+      width: 50%;
+    }
+    .one{
+      order: 1;
+    }
+    .two{
+      order: 3;
+    }
+    .three{
+      order: 2;
+    }
+    .four{
+      order: 4;
+    }
   }
   .item{
+
     h3{
       padding: 0px 25px;
     }
@@ -159,8 +191,8 @@ a{
       margin: 0px;
       padding-bottom: 0px;
     }
-  }
 
+  }
 
 }
 /* ---END FLEXBOX---- */
@@ -257,18 +289,21 @@ footer{
   background-color: rgba(black, 0.3);
   @include footer-style;
   p{
-    margin-top: 10px;
-    margin-bottom: 3px;
+    margin-bottom: 0px;
+    margin-top: 2px;
+    padding: 0px;
   }
   h4{
     @include h4-style;
     margin-bottom: 0px;
-    padding-top: 40px;
+    padding-top: 20px;
+    text-align: left;
   }
   .footer-logo{
-    width: 200px;
-    height: 40px;
+    max-width: 320px;
     padding-top: 15px;
+    display: block;
+    margin: 0px;
 
   }
   .item {
@@ -280,9 +315,16 @@ footer{
         }
       }
       margin: 0px;
-      padding: 10px;
     }
+
   }
+  .container{
+    padding: 0px 25px 5px 25px;
+  }
+}
+.copy{
+  text-align: center;
+  background-color: rgba(black, 0.5);
 }
 
 
@@ -306,6 +348,14 @@ footer{
       padding: 80px 0px 10px 5px;
     }
   }
+}
+@media (min-width: 650px) {
+  footer{
+    .footer-logo{
+      padding: 10px 0px 10px 5px;
+    }
+  }
+
 }
 
 @media (min-width: 650px) {
