@@ -38,9 +38,6 @@ a {
   border-bottom: 1px solid white;
   border-top: 1px solid white;
   padding: 25px; }
-  @media (min-width: 770px) {
-    .about .about {
-      padding: 25px 50px; } }
   .about h2 {
     font-family: "Lovelo";
     color: #000000;
@@ -57,6 +54,10 @@ a {
     font-size: 16px;
     font-size: 20px;
     margin-bottom: 0px; }
+
+@media (min-width: 770px) {
+  .about p {
+    padding: 25px 50px; } }
 
 @media (min-width: 770px) {
   .about h2 {
@@ -104,6 +105,10 @@ h2 {
 .twelve.columns.item p {
   padding-bottom: 25px; }
 
+@media (min-width: 770px) {
+  .twelve.columns.item p {
+    padding: 0px 50px 25px 50px; } }
+
 .row.container {
   margin-top: 20px; }
 
@@ -127,13 +132,15 @@ h2 {
     .container .item {
       width: 50%; }
     .container .one {
-      order: 1; }
+      order: 1;
+      padding-bottom: 10px; }
     .container .two {
       order: 3; }
     .container .three {
       order: 2; }
     .container .four {
-      order: 4; }
+      order: 4;
+      padding-top: 10px; }
   .item h3 {
     padding: 0px 25px; }
   .item p {
@@ -235,13 +242,12 @@ footer {
     color: rgba(0, 0, 0, 0.52);
     color: white;
     font-weight: bold;
-    font-size: 25px;
+    font-size: 30px;
     text-align: center;
     margin-bottom: 0px;
     padding-top: 20px;
     text-align: left; }
   footer .footer-logo {
-    max-width: 320px;
     padding-top: 15px;
     display: block;
     margin: 0px; }
@@ -308,7 +314,8 @@ footer {
       z-index: 100;
       border-bottom: 1px solid white;
       background-color: rgba(188, 203, 211, 0.9);
-      padding-left: 20px; }
+      padding-left: 42px;
+      box-shadow: 0 -36px 91px 0 rgba(50, 50, 50, 0.6); }
     #desktop-menu .show {
       display: block; }
     #desktop-menu ul {

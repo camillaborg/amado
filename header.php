@@ -42,7 +42,6 @@
                 </a>
 
             <?php endif; ?>
-        <div id="sticky-anchor"></div>
         <nav id="desktop-menu" class="main-nav">
             <ul class="navul">
                 <a href="#about"><li>About</li></a>
