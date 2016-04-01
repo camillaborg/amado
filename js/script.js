@@ -26,4 +26,27 @@ jQuery(function($) { // DOM is now read and ready to be manipulated
         });
     });
 
+    $(document).ready(function() {
+        var stickyNavTop = $('.navul').offset().top;
+
+        var stickyNav = function(){
+            var scrollTop = $(window).scrollTop();
+
+            if (scrollTop > stickyNavTop) {
+                $('.navul').addClass('sticky');
+                $('#mini-logo').addClass('show');
+            } else {
+                $('.navul').removeClass('sticky');
+                $('#mini-logo').removeClass('show');
+            }
+        };
+
+        stickyNav();
+
+        $(window).scroll(function() {
+            stickyNav();
+        });
+    });
+
+
 });

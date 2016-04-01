@@ -42,11 +42,13 @@
                 </a>
 
             <?php endif; ?>
+        <div id="sticky-anchor"></div>
         <nav id="desktop-menu" class="main-nav">
-            <ul>
+            <ul class="navul">
                 <a href="#about"><li>About</li></a>
                 <a href="#cases"><li>Cases</li></a>
                 <a href="#contact"><li>Contact</li></a>
+                <img src="<?php echo get_theme_mod( 'logo' ); ?>" alt="<?php echo esc_attr( get_bloginfo( 'name', 'display') ); ?>" id="mini-logo">
             </ul>
         </nav>
     </header>
