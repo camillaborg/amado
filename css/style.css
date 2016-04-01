@@ -57,7 +57,7 @@ a {
 
 @media (min-width: 770px) {
   .about p {
-    padding: 25px 50px; } }
+    padding: 0px 50px 25px 50px; } }
 
 @media (min-width: 770px) {
   .about h2 {
@@ -78,9 +78,6 @@ h2 {
 .cases {
   padding: 25px; }
 
-.six.columns.item.image {
-  padding-bottom: 25px; }
-
 .item h3 {
   font-family: Lovelo;
   color: rgba(0, 0, 0, 0.52);
@@ -96,11 +93,20 @@ h2 {
   display: block;
   margin: 0 auto; }
 
+.item .case-img.ad {
+  width: 100%;
+  margin-top: 10px; }
+
 .item p {
   font-family: Georgia, "Times New Roman", Times, serif;
   color: #fdfdfd;
   font-size: 16px;
   font-size: 20px; }
+
+@media (min-width: 770px) {
+  .item .case-img.ad {
+    width: 85%;
+    margin-top: 0px; } }
 
 .twelve.columns.item p {
   padding-bottom: 25px; }
@@ -123,6 +129,9 @@ h2 {
   margin-bottom: 10px; }
 
 .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
   display: flex;
   flex-direction: column; }
 
@@ -159,7 +168,8 @@ h2 {
   max-width: 100%;
   height: auto;
   display: block;
-  margin: 0 auto; }
+  margin: 0 auto;
+  margin-top: 20px; }
 
 .embed-container iframe,
 .embed-container object,
@@ -175,14 +185,27 @@ h2 {
   .embed-container object,
   .embed-container embed {
     width: 84%;
-    height: 84%; } }
+    height: 84%; }
+  .embed-container {
+    margin-top: 0px; } }
 
 /* Radio */
 .audio {
   display: block;
   margin: 0 auto;
   width: 100%;
-  padding-top: 20px; }
+  margin-top: 10px;
+  padding-top: 15px;
+  padding-bottom: 15px; }
+
+@media (min-width: 770px) {
+  .audio {
+    margin-top: 0px; } }
+
+@media (min-width: 800px) {
+  .audio {
+    padding-top: 28px;
+    padding-bottom: 28px; } }
 
 /* MENU */
 #show-menu {
@@ -276,9 +299,7 @@ footer {
 /* Larger than mobile */
 @media (min-width: 400px) {
   #logo {
-    width: 400px; }
-  .audio {
-    width: 100%; } }
+    width: 400px; } }
 
 /* Larger than phablet (also point when grid becomes active) */
 @media (min-width: 550px) {
@@ -328,11 +349,12 @@ footer {
       position: fixed;
       width: 100%;
       left: 0px;
-      top: 25px;
+      top: 0px;
       z-index: 100;
       border-bottom: 1px solid white;
       background-color: rgba(188, 203, 211, 0.9);
       padding-left: 60px;
+      padding-top: 10px;
       box-shadow: 0 -36px 91px 0 rgba(50, 50, 50, 0.6); }
     #desktop-menu .show {
       display: block; }
@@ -387,3 +409,8 @@ footer {
 @media (min-width: 1200px) {
   .introduction {
     margin: 30px 80px; } }
+
+@media (min-width: 770px) {
+  .item img {
+    max-width: 617px;
+    display: inline; } }
