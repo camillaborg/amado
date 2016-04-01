@@ -41,7 +41,7 @@ $content = get_the_content();
                 <div class="row container">
                     <div class="six columns item image">
                         <?php if( $image ): ?>
-                            <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt'] ?>" />
+                            <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt'] ?>" class="case-img" />
                         <?php endif; ?>
                     </div>
                         <div class="six columns item">

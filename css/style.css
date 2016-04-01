@@ -112,6 +112,9 @@ h2 {
 .row.container {
   margin-top: 20px; }
 
+#contact {
+  max-width: 1000px; }
+
 /* ----FLEXBOX Cases-------*/
 .six.columns {
   margin: 0px; }
@@ -121,8 +124,7 @@ h2 {
 
 .container {
   display: flex;
-  flex-direction: column;
-  max-width: 850px; }
+  flex-direction: column; }
 
 @media (min-width: 650px) {
   .container {
@@ -167,6 +169,13 @@ h2 {
   left: 0;
   width: 100%;
   height: 100%; }
+
+@media (min-width: 770px) {
+  .embed-container iframe,
+  .embed-container object,
+  .embed-container embed {
+    width: 84%;
+    height: 84%; } }
 
 /* Radio */
 .audio {
@@ -238,7 +247,7 @@ footer {
     margin-top: 2px;
     padding: 0px; }
   footer h4 {
-    font-family: Georgia;
+    font-family: "Lovelo";
     color: rgba(0, 0, 0, 0.52);
     color: white;
     font-weight: bold;
@@ -289,6 +298,15 @@ footer {
     align-items: flex-end;
     align-content: center; } }
 
+@media (min-width: 770px) {
+  .row.container {
+    display: flex;
+    justify-content: space-between; } }
+
+@media (min-width: 800px) {
+  .row.container {
+    margin-left: 37px; } }
+
 /* Larger than tablet */
 @media (min-width: 770px) {
   #mini-logo {
@@ -296,7 +314,7 @@ footer {
     width: 170px;
     float: right;
     padding-top: 26px;
-    padding-right: 37px; }
+    padding-right: 115px; }
   #logo {
     width: 700px;
     padding-top: 20px; }
