@@ -39,24 +39,24 @@ $content = get_the_content();
                 <?php endif; ?>
                 <p class="content"><?php echo $content; ?></p>
             </div>
-            <div class="item" id="cases">
-                <div class="row container">
-                    <div class="six columns item image">
+            <div id="cases">
+                <div class="container" id="casino">
+                    <div class="case image">
                         <?php if( $image ): ?>
-                            <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt'] ?>" class="case-img" />
+                        <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt'] ?>" class="case-img" />
                         <?php endif; ?>
                     </div>
-                        <div class="six columns item">
+                        <div class="item" id="video">
                         <?php if( $video ): ?>
                         <div class="embed-container"><?php echo $video ?></div>
                         <?php endif; ?>
                         </div>
-                    </div>
+                </div>
 
-                <div class="row container">
-                    <div class="six columns item image">
+                <div class="container" id="casino">
+                    <div class="case image">
                         <?php if( $banner ): ?>
-                            <img src="<?php echo $banner['url']; ?>" alt="<?php echo $banner['alt'] ?>" class="case-img" />
+                            <img src="<?php echo $banner['url']; ?>" alt="<?php echo $banner['alt'] ?>" class="banner case-img" />
                         <?php endif; ?>
                         <?php if ($radio):?>
                             <audio controls class="audio">
@@ -64,7 +64,7 @@ $content = get_the_content();
                             </audio>
                         <?php endif; ?>
                     </div>
-                        <div class="six columns item image">
+                        <div class="case image">
                             <?php if( $ad ): ?>
                                 <img src="<?php echo $ad['url']; ?>" alt="<?php echo $ad['alt'] ?>" class="case-img ad" />
                             <?php endif; ?>
