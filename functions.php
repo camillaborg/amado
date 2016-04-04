@@ -18,6 +18,7 @@ function wpt_theme_styles(){
 
 }
 
+
 add_action('wp_enqueue_scripts', 'wpt_theme_styles' );
 
 add_theme_support( 'post-thumbnails' );

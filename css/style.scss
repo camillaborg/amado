@@ -211,13 +211,13 @@ a{
     flex-direction: row;
     align-items: flex-start;
     flex-wrap: wrap;
+    justify-content: space-around;
     .item{
       width: 50%;
     }
     #video{
       width: 100%;
-      max-width: 698px;
-      margin-top: 25px;
+      max-width: 700px;
     }
     .one{
       -webkit-box-ordinal-group: 1;
@@ -308,10 +308,7 @@ a{
   margin: 0 auto;
   width: 100%;
   margin-top: 10px;
-  //background-image: url(../images/radio-background.png);
   padding-top: 15px;
-  padding-bottom: 15px;
-  max-width: 698px;
 
 }
 @media (min-width: 770px) {
@@ -494,7 +491,6 @@ footer{
       border-bottom: 1px solid white;
       background-color: rgba($background-color, 0.9);
       padding-left: 60px;
-      padding-top: 10px;
       box-shadow: 0 -36px 91px 0 rgba(50,50,50,.6);
 
     }
@@ -580,11 +576,9 @@ footer{
    display: inline;
  }
 }
-@media (min-width: 1500px) {
-  .navul{
-    ul{
+@media (min-width: 1700px) {
+  #desktop-menu ul{
       left:80px;
-    }
   }
 }
 .item.image{
@@ -596,6 +590,40 @@ footer{
 .case-img {
   width: 100%;
   max-width: 700px;
-  display: block;
-  margin: auto;
+}
+
+@media (min-width: 900px) {
+  #cases{
+    .container{
+      display: flex;
+      flex-direction: row;
+      align-items: flex-start;
+      justify-content: space-around;
+
+      #video{
+        width: 47%;
+        flex-grow: 1;
+        //align-self: flex-start;
+        margin: 0px 15px;
+      }
+      .case{
+        width: 47%;
+        flex-grow: 1;
+        margin: 0px 15px;
+      }
+    }
+  }
+}
+@media (min-width: 1700px) {
+  #video{
+    margin-right: 76px;
+  }
+}
+.ad{
+  margin-top: 20px;
+}
+@media (min-width: 900px) {
+  .ad{
+    margin-top: 0px;
+  }
 }

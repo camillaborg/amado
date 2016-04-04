@@ -58,17 +58,22 @@ $content = get_the_content();
                         <?php if( $banner ): ?>
                             <img src="<?php echo $banner['url']; ?>" alt="<?php echo $banner['alt'] ?>" class="banner case-img" />
                         <?php endif; ?>
-                        <?php if ($radio):?>
-                            <audio controls class="audio">
-                                <source src="<?php echo $radio['url']; ?>" type="audio/wav">
-                            </audio>
-                        <?php endif; ?>
                     </div>
-                        <div class="case image">
+                        <div class="case image" id="ad">
                             <?php if( $ad ): ?>
                                 <img src="<?php echo $ad['url']; ?>" alt="<?php echo $ad['alt'] ?>" class="case-img ad" />
                             <?php endif; ?>
                         </div>
+                </div>
+
+                <div class="row">
+                <div class="twelve columns">
+                    <?php if ($radio):?>
+                        <audio controls class="audio">
+                            <source src="<?php echo $radio['url']; ?>" type="audio/wav">
+                        </audio>
+                    <?php endif; ?>
+                </div>
                 </div>
 
             </div>

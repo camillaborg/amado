@@ -39,7 +39,7 @@
                 </div>
                 <div class="item four">
                     <?php if( $logo ): ?>
-                        <a href="https://www.google.se/maps/place/Engelbrektsgatan+31,+114+32+Stockholm/@59.3423726,18.0689289,17z/data=!3m1!4b1!4m2!3m1!1s0x465f9d42406d894b:0x6eda3eb0f165f952" target="_blank"><img src="<?php echo $logo['url']; ?>" alt="<?php echo $logo['alt'] ?>" class="footer-logo" /></a>
+                        <a href="https://www.google.se/maps/place/Birger+Jarlsgatan+18,+111+45+Stockholm/@59.3364449,18.0718986,17.57z/data=!4m2!3m1!1s0x465f9d5b62b5552f:0xa522a463e2b23b67?hl=sv" target="_blank"><img src="<?php echo $logo['url']; ?>" alt="<?php echo $logo['alt'] ?>" class="footer-logo" /></a>
                     <?php endif; ?>
                 </div>
 
