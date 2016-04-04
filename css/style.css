@@ -59,6 +59,10 @@ a {
   .about p {
     padding: 0px 50px 25px 50px; } }
 
+@media (min-width: 1500px) {
+  .about p {
+    padding: 0px 70px 25px 70px; } }
+
 @media (min-width: 770px) {
   .about h2 {
     padding-bottom: 10px;
@@ -114,6 +118,10 @@ h2 {
 @media (min-width: 770px) {
   .twelve.columns.item p {
     padding: 0px 50px 25px 50px; } }
+
+@media (min-width: 1500px) {
+  .twelve.columns.item p {
+    padding: 0px 70px 25px 70px; } }
 
 .row.container {
   margin-top: 20px; }
@@ -191,12 +199,12 @@ h2 {
 
 /* Radio */
 .audio {
-  display: block;
   margin: 0 auto;
   width: 100%;
   margin-top: 10px;
   padding-top: 15px;
-  padding-bottom: 15px; }
+  padding-bottom: 15px;
+  max-width: 610px; }
 
 @media (min-width: 770px) {
   .audio {
@@ -418,3 +426,7 @@ footer {
   .item img {
     max-width: 617px;
     display: inline; } }
+
+@media (min-width: 1500px) {
+  #desktop-menu ul {
+    left: 80px; } }

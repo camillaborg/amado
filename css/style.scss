@@ -104,6 +104,11 @@ a{
     padding: 0px 50px 25px 50px;
   }
 }
+@media (min-width: 1500px) {
+  .about p{
+    padding: 0px 70px 25px 70px;
+  }
+}
 @media (min-width: 770px) {
   .about {
     h2 {
@@ -164,6 +169,13 @@ a{
   .twelve.columns.item{
     p{
       padding: 0px 50px 25px 50px;
+    }
+  }
+}
+@media (min-width: 1500px) {
+  .twelve.columns.item{
+    p{
+      padding: 0px 70px 25px 70px;
     }
   }
 }
@@ -265,13 +277,15 @@ a{
 
 /* Radio */
 .audio{
-  display: block;
+  //display: block;
   margin: 0 auto;
   width: 100%;
   margin-top: 10px;
   //background-image: url(../images/radio-background.png);
   padding-top: 15px;
   padding-bottom: 15px;
+  max-width: 610px;
+
 }
 @media (min-width: 770px) {
   .audio{
@@ -563,4 +577,9 @@ footer{
    max-width: 617px;
    display: inline;
  }
+}
+@media (min-width: 1500px) {
+  #desktop-menu ul{
+      left:80px;
+  }
 }
