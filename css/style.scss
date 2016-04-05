@@ -220,34 +220,26 @@ a{
       max-width: 700px;
     }
     .one{
-      -webkit-box-ordinal-group: 1;
-      -moz-box-ordinal-group: 1;
-      -ms-flex-order: 1;
-      -webkit-order: 1;
-      order: 1;
+      -webkit-box-ordinal-group: -3;
+      -moz-box-ordinal-group: -3;
+      -ms-flex-order: -3;
+      -webkit-order: -3;
+      order: -3;
       padding-bottom: 10px;
     }
-    .two{
-      -webkit-box-ordinal-group: 3;
-      -moz-box-ordinal-group: 3;
-      -ms-flex-order: 3;
-      -webkit-order: 3;
-      order: 3;
-    }
     .three{
-      -webkit-box-ordinal-group: 2;
-      -moz-box-ordinal-group: 2;
-      -ms-flex-order: 2;
-      -webkit-order: 2;
-      order: 2;
+      -webkit-box-ordinal-group: -2;
+      -moz-box-ordinal-group: -2;
+      -ms-flex-order: -2;
+      -webkit-order: -2;
+      order: -2;
     }
-    .four{
-      -webkit-box-ordinal-group: 4;
-      -moz-box-ordinal-group: 4;
-      -ms-flex-order: 4;
-      -webkit-order: 4;
-      order: 4;
-      padding-top: 10px;
+    .two{
+      -webkit-box-ordinal-group: -1;
+      -moz-box-ordinal-group: -1;
+      -ms-flex-order: -1;
+      -webkit-order: -1;
+      order: -1;
     }
   }
   .item{
@@ -592,7 +584,7 @@ footer{
   max-width: 700px;
 }
 
-@media (min-width: 900px) {
+@media (min-width: 1050px) {
   #cases{
     .container{
       display: flex;
@@ -604,11 +596,13 @@ footer{
         width: 47%;
         flex-grow: 1;
         //align-self: flex-start;
+        margin: auto;
         margin: 0px 15px;
       }
       .case{
         width: 47%;
         flex-grow: 1;
+        margin: auto;
         margin: 0px 15px;
       }
     }
@@ -619,7 +613,7 @@ footer{
     margin-right: 95px;
   }
   #cases{
-    margin-left: 39px;
+    margin-left: 59px;
   }
 }
 .ad{
@@ -630,3 +624,4 @@ footer{
     margin-top: 0px;
   }
 }
+
