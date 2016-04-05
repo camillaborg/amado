@@ -455,8 +455,10 @@ footer {
       margin: 0px 15px; } }
 
 @media (min-width: 1700px) {
-  #video {
-    margin-right: 76px; } }
+  #cases .container #video {
+    margin-right: 95px; }
+  #cases {
+    margin-left: 39px; } }
 
 .ad {
   margin-top: 20px; }
